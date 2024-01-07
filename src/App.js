@@ -1,10 +1,12 @@
+import InfiniteScroll from './components/InfiniteScroll';
+import MainContainer from './components/MainContainer';
 import Navbar from './components/Navbar';
-import './App.css';
 
 function App() {
   return (
-    <div className='bg-blue'>
-      <Navbar />
+    <div className='bg-black text-white text-center w-full'>
+      {/* <Navbar /> */}
+      <MainContainer />
     </div>
   );
 }

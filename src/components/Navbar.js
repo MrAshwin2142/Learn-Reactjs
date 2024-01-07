@@ -1,4 +1,3 @@
-import './components.css'
 const Navbar = () => {
     return (
         <div className='navbar'>
