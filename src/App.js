@@ -1,13 +1,20 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import InfiniteScroll from './components/InfiniteScroll';
 import MainContainer from './components/MainContainer';
-import Navbar from './components/Navbar';
+import Pagination from './components/Pagination';
+import Loading from './components/Loading';
 
 function App() {
   return (
-    <div className='bg-black text-white text-center w-full'>
-      {/* <Navbar /> */}
-      <MainContainer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainContainer />}>
+          <Route index element={<Loading />} />
+          <Route path="pagination" element={<Pagination />} />
+          <Route path="infintescroll" element={<InfiniteScroll />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
