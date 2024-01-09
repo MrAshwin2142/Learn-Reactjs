@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CryptoList from './CryptoList';
 import Pagebar from './Pagebar';
-import Loading from './Loading';
 import ShimmerUI from './ShimmerUI';
 
 const Pagination = () => {
@@ -24,7 +23,7 @@ const Pagination = () => {
         <div>
             <h1 className='text-2xl font-bold'>Pagination Crypto Gallery </h1>
             {/* {loading && <Loading />} */}
-            {loading?<ShimmerUI/>:<CryptoList coins={coins}/>}
+            {loading ? <ShimmerUI /> : <CryptoList coins={coins} />}
             {/* <ShimmerUI/> */}
             {/* <CryptoList coins={coins} /> */}
             <Pagebar setPage={setPage} page={page} />
