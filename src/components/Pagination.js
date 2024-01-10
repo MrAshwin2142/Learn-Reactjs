@@ -20,7 +20,7 @@ const Pagination = () => {
     }, [page])
 
     return (
-        <div>
+        <div className='w-full h-10/12'>
             <h1 className='text-2xl font-bold'>Pagination Crypto Gallery </h1>
             {/* {loading && <Loading />} */}
             {loading ? <ShimmerUI /> : <CryptoList coins={coins} />}
