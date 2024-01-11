@@ -11,6 +11,7 @@ const Home = () => {
                     <li className="mb-2"><span className="font-bold text-lg">Infinite Scroll:</span> Experience seamless scrolling and dynamic content loading.</li>
                     <li className="mb-2"><span className="font-bold text-lg">Pagination:</span> Navigate through discrete pages of content.</li>
                     <li className="mb-2"><span className="font-bold text-lg">Form Validation:</span> Validate user inputs in various forms across the app.</li>
+                    <li className="mb-2"><span className="font-bold text-lg">Search:</span> Utilize the search feature to find specific content within the app.</li>
                 </ul>
             </div>
             <p className="text-gray-300">Thanks for visiting <span>Learn Reactjs</span>. Stay tuned for more updates as I continue to learn and grow this project!</p>

@@ -4,6 +4,7 @@ import MainContainer from './components/MainContainer';
 import Pagination from './components/Pagination';
 import FormValidation from './components/FormValidation';
 import Home from './components/Home';
+import Search from './components/Search';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="pagination" element={<Pagination />} />
           <Route path="infintescroll" element={<InfiniteScroll />} />
           <Route path="formvalidation" element={<FormValidation />} />
+          <Route path="search" element={<Search />} />
         </Route>
       </Routes>
     </BrowserRouter>
