@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import InfiniteScroll from './components/InfiniteScroll';
+import InfiniteScroll from './components/infiniteScroll/InfiniteScroll';
 import MainContainer from './components/MainContainer';
-import Pagination from './components/Pagination';
-import FormValidation from './components/FormValidation';
+import Pagination from './components/pagination/Pagination';
+import FormValidation from './components/formValidation/FormValidation';
 import Home from './components/Home';
-import Search from './components/Search';
+import Search from './components/search/Search';
+import Counter from './components/counter/Counter';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="infintescroll" element={<InfiniteScroll />} />
           <Route path="formvalidation" element={<FormValidation />} />
           <Route path="search" element={<Search />} />
+          <Route path="counter" element={<Counter />} />
         </Route>
       </Routes>
     </BrowserRouter>
